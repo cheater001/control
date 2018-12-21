@@ -1,0 +1,14 @@
+<button cdkAccordionItem expanded="true" (click)="panel.toggle()"
+        fxLayout="row" fxLayoutAlign="space-between center">
+  <strong>
+    <ng-content></ng-content>
+    <small *ngIf="navGroupItem.isActive && !panel.expanded">*</small>
+  </strong>
+
+  <mat-icon *ngIf="panel.expanded; else panelCollapsed">keyboard_arrow_up</mat-icon>
+  <ng-template #panelCollapsed>
+    <mat-icon>keyboard_arrow_down</mat-icon>
+  </ng-template>
+</button>
+
+

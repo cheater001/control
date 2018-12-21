@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 100%;
+  min-height: 100%;
+}
+
+.close,
+.pin {
+  margin: 15px;
+  cursor: pointer;
+}
+
+.pin {
+  transition: transform .2s ease;
+
+  &.pinned {
+    transform: rotateZ(90deg);
+  }
+}
+
+@media print {
+  :host {
+    display: none !important;
+    visibility: hidden;
+  }
+}

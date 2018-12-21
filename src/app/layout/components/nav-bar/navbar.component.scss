@@ -1,0 +1,39 @@
+:host {
+  z-index: 200;
+}
+
+.mat-h1 {
+  &:first-child {
+    padding-left: 15px;
+  }
+  line-height: 54px;
+}
+
+.logo {
+  padding: 4px 0;
+
+  img {
+    vertical-align: bottom;
+  }
+}
+
+.open {
+  margin: 15px;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+@media print {
+  :host {
+    display: none;
+  }
+}
+
+body {
+  background-color: rebeccapurple;
+}

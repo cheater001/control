@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+
+a[mat-list-item] {
+  display: block;
+  border-left: 4px solid transparent;
+  font-size: 13px;
+  font-weight: bold;
+}

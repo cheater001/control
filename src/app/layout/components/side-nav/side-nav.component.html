@@ -1,0 +1,12 @@
+<div fxLayout="row" fxLayoutAlign="space-between center">
+  <mat-icon (click)="close()" class="close">
+    dehaze
+  </mat-icon>
+  <mat-icon *ngIf="showPinButton" (click)="togglePin()" class="pin" [ngClass]="{ 'pinned': pinned }">
+    label_important_outline
+  </mat-icon>
+</div>
+
+<mat-nav-list fxFlex>
+  <ng-content></ng-content>
+</mat-nav-list>

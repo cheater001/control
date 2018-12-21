@@ -1,0 +1,25 @@
+@import '~@angular/material/theming';
+
+$dark-primary: mat-palette($mat-blue-grey);
+$dark-accent:  mat-palette($mat-deep-orange);
+$dark-warn:    mat-palette($mat-red, 400);
+
+$dark-disabled:    mat-palette($mat-gray, 500);
+$dark-success:    mat-palette($mat-green, 500);
+
+// Use this to get main theme colors
+$primary: mat-color($dark-primary);
+$accent: mat-color($dark-accent);
+$warn: mat-color($dark-warn);
+$disabled: mat-color($dark-disabled);
+$success: mat-color($dark-success);
+
+$palette-dark-primary: #193441;
+$palette-primary: #3E606F ;
+$palette-light-primary: #E6ECF5;
+//
+$palette-accent: #FD693A;
+//
+$link-color: lighten($palette-primary, 20%);
+$text-color-inverted: #C0C0C0;
+$text-color-inverted-focus: white;
